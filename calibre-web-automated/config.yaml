@@ -11,7 +11,7 @@ arch:
 startup: application
 webui: "[PROTO:option_name]://[HOST]:[PORT:8083]"
 boot: auto
-version: "3.0.4"
+version: "latest"
 ports:
   8083/tcp: 8083
 image: docker.io/crocodilestick/calibre-web-automated
