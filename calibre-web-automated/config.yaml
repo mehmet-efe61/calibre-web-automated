@@ -11,9 +11,10 @@ arch:
 startup: application
 webui: "[PROTO:option_name]://[HOST]:[PORT:8083]"
 boot: auto
+version: "1.0.0"
 ports:
   8083/tcp: 8083
-image: crocodilestick/calibre-web-automated:latest
+image: "docker.io/crocodilestick/calibre-web-automated:latest"
 environment:
       # Only change these if you know what you're doing
   PUID: "1000"
