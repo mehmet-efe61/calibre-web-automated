@@ -22,9 +22,14 @@ environment:
       # Edit to match your current timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   TZ: "UTC"
 map:
-  - config:rw
+  - addon_config:rw
   - media:rw
   - share:rw
+
+path:
+  addon_config: "/config"          # Replaces /config (persistent add-on storage)
+  media: "/cwa-book-ingest"           # Book ingestion directory
+  share: "/calibre-library"          # Persistent Calibre library
       # CW users migrating should stop their existing CW instance, make a copy of the config folder, and bind that here to carry over all of their user settings ect.
       # This is an ingest dir, NOT a library one. Anything added here will be automatically added to your library according to the settings you have configured in CWA Settings page. All files placed here are REMOVED AFTER PROCESSING
       # If you don't have an existing library, CWA will automatically create one at the bind provided here
